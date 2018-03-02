@@ -4,7 +4,7 @@ import { prefixLink } from 'gatsby-helpers'
 import Helmet from "react-helmet"
 import { config } from 'config'
 
-export default class Index extends React.Component {
+export default class About extends React.Component {
   render () {
     return (
       <div>
@@ -16,9 +16,9 @@ export default class Index extends React.Component {
           ]}
         />
         <h1>
-          Hello World!
+          About
         </h1>
-        <p>Welcome to your new clean Gatsby site</p>
+        <p>Welcome to about site</p>
       </div>
     )
   }
