@@ -1,12 +1,11 @@
 import React from 'react'
 import { Container } from 'react-responsive-grid'
-import { Link, Router, Route } from 'react-router'
+import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Headroom from 'react-headroom'
 import '../css/markdown-styles'
 
 import { rhythm } from '../utils/typography'
-import About from "./pages/About";
 
 module.exports = React.createClass({
   propTypes () {
@@ -32,9 +31,6 @@ module.exports = React.createClass({
               padding: `${rhythm(1)} ${rhythm(3/4)}`,
             }}
           >
-          <Router>
-            <Route path="about" component={About}></Route>
-          </Router>
             <Link
               to={prefixLink('/')}
               style={{
@@ -45,10 +41,11 @@ module.exports = React.createClass({
               START
             </Link>
             <Link
-              to={About}
+              to={prefixLink('./pages/About')}
               style={{
                 color: 'white',
                 textDecoration: 'none',
+                paddingLeft: '20px',
               }}
             >
               About
